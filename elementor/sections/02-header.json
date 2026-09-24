@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — HEADER",
+  "title": "KDP Profit Machine — HEADER",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<header style=\"padding: 18px 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--surface-border); position: relative; z-index: 10;\">\n    <div class=\"container\" style=\"display: flex; justify-content: space-between; align-items: center;\">\n      <a href=\"#hero\">\n        <img src=\"/wp-content/uploads/kdp-mafia/assets/logo.png\" alt=\"KDP Mafia Logo\" style=\"height: 55px; width: auto;\">\n      </a>\n      <div class=\"mono-spec\" style=\"display: flex; align-items: center; gap: 8px; background: var(--emerald-bg); border: 1px solid #6ee7b7; padding: 6px 16px; border-radius: 50px; color: var(--emerald-pass); font-weight: 800;\">\n        <span style=\"width: 8px; height: 8px; background: var(--emerald-pass); border-radius: 50%;\"></span>\n        COMMERCIAL LICENSE INCLUDED\n      </div>\n      <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 10px 22px; font-size: 0.9rem; border-width: 2px;\">\n        GET KDP MAFIA NOW ($17)\n      </a>\n    </div>\n  </header>",
+                "html": "<header style=\"padding: 18px 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-bottom: 1px solid var(--surface-border); position: relative; z-index: 10;\">\n    <div class=\"container\" style=\"display: flex; justify-content: space-between; align-items: center;\">\n      <a href=\"#hero\">\n        <img src=\"/wp-content/uploads/kdp-mafia/assets/logo.png\" alt=\"KDP Profit Machine Logo\" style=\"height: 55px; width: auto;\">\n      </a>\n      <div class=\"mono-spec\" style=\"display: flex; align-items: center; gap: 8px; background: var(--emerald-bg); border: 1px solid #6ee7b7; padding: 6px 16px; border-radius: 50px; color: var(--emerald-pass); font-weight: 800;\">\n        <span style=\"width: 8px; height: 8px; background: var(--emerald-pass); border-radius: 50%;\"></span>\n        COMMERCIAL LICENSE INCLUDED\n      </div>\n      <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 10px 22px; font-size: 0.9rem; border-width: 2px;\">\n        GET KDP Profit Machine NOW ($17)\n      </a>\n    </div>\n  </header>",
                 "_element_id": "header"
               },
               "elements": []

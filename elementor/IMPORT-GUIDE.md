@@ -1,4 +1,4 @@
-# KDP Mafia — Elementor Import Guide
+# KDP Profit Machine — Elementor Import Guide
 
 Poori landing page **59 alag Elementor sections** mein convert ho chuki hai.
 
@@ -25,7 +25,7 @@ elementor/
 1. **Elementor** (free ya Pro) install karo
 2. **Poppins font:** Elementor → Site Settings → Global Fonts → Primary = Poppins  
    (Google Fonts se auto load hoga)
-3. Naya page banao: **"KDP Mafia Landing"**
+3. Naya page banao: **"KDP Profit Machine Landing"**
 4. Page template: **Elementor Canvas** (header/footer hide)
 
 ---
@@ -92,7 +92,7 @@ Agar ek-ek karke lagana ho:
 Sirf **1 jagah** real checkout URL daalo:
 
 Section **52** (Offer / Pricing box) → HTML widget →  
-`Grab KDP Mafia Now!` button ka href:
+`Grab KDP Profit Machine Now!` button ka href:
 
 ```
 https://checkout.example.com/kdp-mafia

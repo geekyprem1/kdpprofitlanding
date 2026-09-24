@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — SECTION 52: FINAL CTA",
+  "title": "KDP Profit Machine — SECTION 52: FINAL CTA",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<section class=\"sec-editorial bg-img-pricing text-center\">\n    <div class=\"overlay-layer overlay-warm-amber\"></div>\n    <div class=\"container\">\n      <div class=\"eyebrow-badge\">SECTION 52</div>\n      <h2 class=\"sec-title\">👉 Get KDP Mafia Now — One-Time $17</h2>\n      \n      <a href=\"#checkout\" class=\"btn-editorial-gold\">\n        [ YES! GIVE ME INSTANT ACCESS ]\n        <span class=\"btn-caption\">✅ 20+ book types · ✅ Compliant-by-construction · ✅ Commercial License · ✅ 5 bonuses · ✅ 30-day guarantee</span>\n      </a>\n      \n      <div class=\"mono-spec\" style=\"color: var(--crimson-fail); font-weight: 800; margin-top: 15px; position: relative; z-index: 2;\">\n        *Price rises with every sale.*\n      </div>\n    </div>\n  </section>",
+                "html": "<section class=\"sec-editorial bg-img-pricing text-center\">\n    <div class=\"overlay-layer overlay-warm-amber\"></div>\n    <div class=\"container\">\n      <div class=\"eyebrow-badge\">SECTION 52</div>\n      <h2 class=\"sec-title\">👉 Get KDP Profit Machine Now — One-Time $17</h2>\n      \n      <a href=\"#checkout\" class=\"btn-editorial-gold\">\n        [ YES! GIVE ME INSTANT ACCESS ]\n        <span class=\"btn-caption\">✅ 20+ book types · ✅ Compliant-by-construction · ✅ Commercial License · ✅ 5 bonuses · ✅ 30-day guarantee</span>\n      </a>\n      \n      <div class=\"mono-spec\" style=\"color: var(--crimson-fail); font-weight: 800; margin-top: 15px; position: relative; z-index: 2;\">\n        *Price rises with every sale.*\n      </div>\n    </div>\n  </section>",
                 "_element_id": "section-52-final-cta"
               },
               "elements": []

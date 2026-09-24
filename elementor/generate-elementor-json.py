@@ -299,7 +299,7 @@ def main() -> None:
         section = make_section(title=display_title, html=html, slug=slug)
         all_sections.append(section)
 
-        section_page = make_page_json(f"KDP Mafia — {title}", [section])
+        section_page = make_page_json(f"KDP Profit Machine — {title}", [section])
         filename = f"{i:02d}-{slug}.json"
         out_path = SECTIONS_DIR / filename
         out_path.write_text(json.dumps(section_page, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -312,7 +312,7 @@ def main() -> None:
             "file": f"sections/{filename}",
         })
 
-    full_page = make_page_json("KDP Mafia — Full Landing Page", all_sections)
+    full_page = make_page_json("KDP Profit Machine — Full Landing Page", all_sections)
     (OUT / "kdp-mafia-full-page.json").write_text(
         json.dumps(full_page, indent=2, ensure_ascii=False), encoding="utf-8"
     )

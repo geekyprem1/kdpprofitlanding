@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — SECTION 14: INTRODUCING KDP MAFIA",
+  "title": "KDP Profit Machine — SECTION 14: INTRODUCING KDP Profit Machine",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -27,7 +27,7 @@
           "left": "0",
           "isLinked": true
         },
-        "_title": "11. SECTION 14: INTRODUCING KDP MAFIA",
+        "_title": "11. SECTION 14: INTRODUCING KDP Profit Machine",
         "css_classes": "kdp-section kdp-section-14-introducing-kdp-mafia"
       },
       "elements": [
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<section class=\"sec-editorial bg-img-hero text-center\" id=\"solution\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\">\n      <div class=\"eyebrow-badge\">THE SYSTEM IS HERE</div>\n      <h1 class=\"sec-title\" style=\"font-size: 3.2rem;\">Introducing <span class=\"highlight-amber\">KDP MAFIA</span></h1>\n      <p class=\"sec-desc\" style=\"font-size: 1.3rem;\">\n        The all-in-one AI publishing platform that turns a keyword into REAL, Amazon-compliant books — across 20+ formats — while everyone else is still selling 6-minute slop.\n      </p>\n      <div style=\"font-size: 1.3rem; font-weight: 800; color: var(--blue-cobalt); margin-bottom: 30px;\">\n        Research → Create → Package → Publish. One dashboard. One workflow.\n      </div>\n      <img src=\"/wp-content/uploads/kdp-mafia/assets/bundle.png\" alt=\"KDP Mafia Platform\" style=\"max-width: 750px; width: 100%; border-radius: 20px; box-shadow: var(--shadow-amber); position: relative; z-index: 2;\">\n    </div>\n  </section>",
+                "html": "<section class=\"sec-editorial bg-img-hero text-center\" id=\"solution\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\">\n      <div class=\"eyebrow-badge\">THE SYSTEM IS HERE</div>\n      <h1 class=\"sec-title\" style=\"font-size: 3.2rem;\">Introducing <span class=\"highlight-amber\">KDP Profit Machine</span></h1>\n      <p class=\"sec-desc\" style=\"font-size: 1.3rem;\">\n        The all-in-one AI publishing platform that turns a keyword into REAL, Amazon-compliant books — across 20+ formats — while everyone else is still selling 6-minute slop.\n      </p>\n      <div style=\"font-size: 1.3rem; font-weight: 800; color: var(--blue-cobalt); margin-bottom: 30px;\">\n        Research → Create → Package → Publish. One dashboard. One workflow.\n      </div>\n      <img src=\"/wp-content/uploads/kdp-mafia/assets/bundle.png\" alt=\"KDP Profit Machine Platform\" style=\"max-width: 750px; width: 100%; border-radius: 20px; box-shadow: var(--shadow-amber); position: relative; z-index: 2;\">\n    </div>\n  </section>",
                 "_element_id": "section-14-introducing-kdp-mafia"
               },
               "elements": []

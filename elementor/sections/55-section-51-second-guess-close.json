@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — SECTION 51: SECOND-GUESS CLOSE",
+  "title": "KDP Profit Machine — SECTION 51: SECOND-GUESS CLOSE",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<section class=\"sec-editorial bg-img-hero text-center\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\" style=\"max-width: 900px;\">\n      <div class=\"eyebrow-badge\">SECTION 51</div>\n      <h2 class=\"sec-title\">Two choices right now...</h2>\n\n      <div class=\"grid-2 text-left\" style=\"margin-top: 35px;\">\n        <div class=\"card-panel\" style=\"background: #ffffff;\">\n          <h3 style=\"color: var(--crimson-fail); font-size: 1.3rem; margin-bottom: 10px;\">Choice 1:</h3>\n          <p>Close this page. Keep guessing, keep paying freelancers, or keep gambling on slop that gets refunded and hurts your account.</p>\n        </div>\n\n        <div class=\"card-panel\" style=\"background: var(--emerald-bg); border: 2px solid #86efac;\">\n          <h3 style=\"color: var(--emerald-pass); font-size: 1.3rem; margin-bottom: 10px;\">Choice 2:</h3>\n          <p>Grab KDP Mafia for $17, generate a real, compliant, upload-ready book tonight, and start building a catalog that actually lasts.</p>\n        </div>\n      </div>\n    </div>\n  </section>",
+                "html": "<section class=\"sec-editorial bg-img-hero text-center\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\" style=\"max-width: 900px;\">\n      <div class=\"eyebrow-badge\">SECTION 51</div>\n      <h2 class=\"sec-title\">Two choices right now...</h2>\n\n      <div class=\"grid-2 text-left\" style=\"margin-top: 35px;\">\n        <div class=\"card-panel\" style=\"background: #ffffff;\">\n          <h3 style=\"color: var(--crimson-fail); font-size: 1.3rem; margin-bottom: 10px;\">Choice 1:</h3>\n          <p>Close this page. Keep guessing, keep paying freelancers, or keep gambling on slop that gets refunded and hurts your account.</p>\n        </div>\n\n        <div class=\"card-panel\" style=\"background: var(--emerald-bg); border: 2px solid #86efac;\">\n          <h3 style=\"color: var(--emerald-pass); font-size: 1.3rem; margin-bottom: 10px;\">Choice 2:</h3>\n          <p>Grab KDP Profit Machine for $17, generate a real, compliant, upload-ready book tonight, and start building a catalog that actually lasts.</p>\n        </div>\n      </div>\n    </div>\n  </section>",
                 "_element_id": "section-51-second-guess-close"
               },
               "elements": []

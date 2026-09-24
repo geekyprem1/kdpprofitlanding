@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — SECTION 53: P.S. & P.P.S.",
+  "title": "KDP Profit Machine — SECTION 53: P.S. & P.P.S.",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<section class=\"sec-editorial bg-img-hero text-center\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\" style=\"max-width: 900px;\">\n      <div class=\"card-panel text-left\" style=\"background: #ffffff; font-size: 1.1rem; line-height: 1.8;\">\n        <p style=\"margin-bottom: 16px;\">\n          <strong>P.S.</strong> — Everyone else is racing to spit out a 6-minute AI book — the exact slop Amazon is now flagging and readers are refunding. KDP Mafia is the opposite: real, verified books across 20+ formats, every file built to pass Amazon's check. One-time $17, 30-day guarantee.\n        </p>\n        <p>\n          <strong>P.P.S.</strong> — It's a dime-sale, so this is the cheapest it will ever be. The next buyer pays more. Lock in your price now.\n        </p>\n        <div style=\"text-align: center; margin-top: 25px;\">\n          <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 14px 32px; font-size: 1.1rem;\">\n            [ SECURE MY COPY AT THE LOWEST PRICE → ]\n          </a>\n        </div>\n      </div>\n    </div>\n  </section>",
+                "html": "<section class=\"sec-editorial bg-img-hero text-center\">\n    <div class=\"overlay-layer overlay-light-gold\"></div>\n    <div class=\"container\" style=\"max-width: 900px;\">\n      <div class=\"card-panel text-left\" style=\"background: #ffffff; font-size: 1.1rem; line-height: 1.8;\">\n        <p style=\"margin-bottom: 16px;\">\n          <strong>P.S.</strong> — Everyone else is racing to spit out a 6-minute AI book — the exact slop Amazon is now flagging and readers are refunding. KDP Profit Machine is the opposite: real, verified books across 20+ formats, every file built to pass Amazon's check. One-time $17, 30-day guarantee.\n        </p>\n        <p>\n          <strong>P.P.S.</strong> — It's a dime-sale, so this is the cheapest it will ever be. The next buyer pays more. Lock in your price now.\n        </p>\n        <div style=\"text-align: center; margin-top: 25px;\">\n          <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 14px 32px; font-size: 1.1rem;\">\n            [ SECURE MY COPY AT THE LOWEST PRICE → ]\n          </a>\n        </div>\n      </div>\n    </div>\n  </section>",
                 "_element_id": "section-53-p-s-p-p-s"
               },
               "elements": []

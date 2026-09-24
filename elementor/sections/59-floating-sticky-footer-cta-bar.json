@@ -1,5 +1,5 @@
 {
-  "title": "KDP Mafia — FLOATING STICKY FOOTER CTA BAR",
+  "title": "KDP Profit Machine — FLOATING STICKY FOOTER CTA BAR",
   "type": "page",
   "version": "0.4",
   "page_settings": {
@@ -46,7 +46,7 @@
               "widgetType": "html",
               "isInner": false,
               "settings": {
-                "html": "<div id=\"stickyBar\" class=\"floating-bottom-bar\">\n    <div style=\"display: flex; align-items: center; gap: 14px;\">\n      <img src=\"/wp-content/uploads/kdp-mafia/assets/logo.png\" alt=\"KDP Mafia\" style=\"height: 40px;\">\n      <div>\n        <div style=\"font-weight: 800; font-size: 1.05rem; color: #0b0f19;\">KDP MAFIA — ANTI-AI SLOP ENGINE</div>\n        <div class=\"mono-spec\" style=\"color: var(--crimson-fail); font-weight: 800; font-size: 0.85rem;\">⏳ Dime-Sale Active: Current Price <span class=\"dime-price\">$17.00</span></div>\n      </div>\n    </div>\n    <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 10px 22px; font-size: 0.9rem; border-width: 2px;\">\n      LOCK IN $17 PRICE NOW\n    </a>\n  </div>",
+                "html": "<div id=\"stickyBar\" class=\"floating-bottom-bar\">\n    <div style=\"display: flex; align-items: center; gap: 14px;\">\n      <img src=\"/wp-content/uploads/kdp-mafia/assets/logo.png\" alt=\"KDP Profit Machine\" style=\"height: 40px;\">\n      <div>\n        <div style=\"font-weight: 800; font-size: 1.05rem; color: #0b0f19;\">KDP Profit Machine — ANTI-AI SLOP ENGINE</div>\n        <div class=\"mono-spec\" style=\"color: var(--crimson-fail); font-weight: 800; font-size: 0.85rem;\">⏳ Dime-Sale Active: Current Price <span class=\"dime-price\">$17.00</span></div>\n      </div>\n    </div>\n    <a href=\"#checkout\" class=\"btn-editorial-gold\" style=\"padding: 10px 22px; font-size: 0.9rem; border-width: 2px;\">\n      LOCK IN $17 PRICE NOW\n    </a>\n  </div>",
                 "_element_id": "floating-sticky-footer-cta-bar"
               },
               "elements": []
