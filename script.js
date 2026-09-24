@@ -1,5 +1,5 @@
 /* ==========================================================================
-   KDP MAFIA - Interactive Anti-AI-Slop Script
+   KDP Profit Machine - Interactive Anti-AI-Slop Script
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -115,7 +115,7 @@ function initCountdown() {
 }
 
 function getCountdownEndTime() {
-  const storageKey = 'kdp_mafia_cta_countdown_end';
+  const storageKey = 'kdp_profit_machine_cta_countdown_end';
   const stored = localStorage.getItem(storageKey);
 
   if (stored) {
@@ -179,7 +179,7 @@ function initVideoPlayer() {
       vslContainer.innerHTML = `
         <iframe 
           src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0" 
-          title="KDP Mafia Demo" 
+          title="KDP Profit Machine Demo"
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
@@ -308,5 +308,3 @@ function initPillRotator() {
     }, 350);
   }, 2600);
 }
-
-

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   KDP Mafia - Grid Paper Background, Side 3D Graphic Elements & Screenshot Offer Box
+   KDP Profit Machine - Grid Paper Background, Side 3D Graphic Elements & Screenshot Offer Box
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
@@ -38,6 +38,27 @@
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 28px;
+}
+
+/* KDP Profit Machine brand mark: the supplied logo is taller than the old wordmark. */
+.site-header .site-header-logo img[src*="kdp-profit-machine-logo"],
+.front-page .site-header-logo img[src*="kdp-profit-machine-logo"] {
+  width: min(210px, 48vw);
+  height: auto;
+  max-height: 92px;
+  object-fit: contain;
+}
+
+.site-footer-logo[src*="kdp-profit-machine-logo"] {
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .site-header .site-header-logo img[src*="kdp-profit-machine-logo"],
+  .front-page .site-header-logo img[src*="kdp-profit-machine-logo"] {
+    width: min(170px, 58vw);
+    max-height: 72px;
+  }
 }
 
 *,
@@ -2577,7 +2598,7 @@ body.has-sticky-bar {
 }
 
 
-/* Unified page header — centred KDP MAFIA wordmark only. */
+/* Unified page header — centred KDP Profit Machine wordmark only. */
 .site-header-badge,
 .site-header-cta {
   display: none !important;
@@ -2643,34 +2664,31 @@ body.has-sticky-bar {
 }
 
 
-/* Show product-bundle image inside the Introducing KDP MAFIA section cleanly without cropping */
+/* Show product-bundle image inside the Introducing KDP Profit Machine section cleanly without cropping */
 img[src*="assets/bundle.png"] {
   display: block !important;
 }
 
-.kdp-mafia-bundle-frame {
+.kdp-profit-machine-bundle-frame {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-  border-radius: 20px !important;
-  border: 3px solid #f59e0b !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(245, 158, 11, 0.3) !important;
   position: relative;
   z-index: 2;
-  overflow: hidden !important;
-  background: #ffffff !important;
+  overflow: visible;
+  background: transparent;
 }
 
-.kdp-mafia-bundle-frame img,
-.kdp-mafia-bundle-frame img[src*="bundle.png"] {
+.kdp-profit-machine-bundle-frame img,
+.kdp-profit-machine-bundle-frame img[src*="bundle.png"] {
   display: block !important;
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 17px !important;
+  border-radius: 0;
 }
 
-/* Larger centred KDP MAFIA wordmark from the supplied reference image. */
+/* Larger centred KDP Profit Machine wordmark from the supplied reference image. */
 .site-header .site-header-inner,
 .front-page .site-header-inner {
   min-height: 82px;
@@ -3851,7 +3869,7 @@ img[src*="assets/bundle.png"] {
 }
 
 /* ==========================================================================
-   KDP MAFIA JV PAGE STYLES
+   KDP Profit Machine JV PAGE STYLES
    ========================================================================== */
 .jv-page {
   background-color: #080a10;
@@ -5356,7 +5374,7 @@ img[src*="assets/bundle.png"] {
     font-size: 0.95rem;
     align-items: flex-start;
   }
-  .guarantee-box-icon {
+.guarantee-box-icon {
     margin-top: 2px;
   }
 }
