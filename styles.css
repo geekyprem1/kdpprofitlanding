@@ -2,7 +2,7 @@
    KDP Profit Machine - Grid Paper Background, Side 3D Graphic Elements & Screenshot Offer Box
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
   --bg-white: #ffffff;
@@ -38,6 +38,11 @@
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 28px;
+}
+
+/* The main sales page uses a condensed display face to match its bold publishing-tool identity. */
+body.front-page {
+  --font-display: 'Barlow Condensed', 'Arial Narrow', 'Arial', sans-serif;
 }
 
 /* KDP Profit Machine brand mark: the supplied logo is taller than the old wordmark. */
@@ -776,6 +781,233 @@ body.has-sticky-bar {
 .feature-img-frame:hover {
   transform: scale(1.02);
   border-color: var(--amber-dark);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px;
+  color: #f8fafc;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.96));
+  border: 1px solid rgba(251, 191, 36, 0.28);
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+}
+
+.review-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.review-avatar {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: #111827;
+  background: linear-gradient(145deg, #fde68a, #f59e0b);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.review-card-heading h3 {
+  margin: 0 0 3px;
+  color: #f8fafc;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.review-stars {
+  margin: 0;
+  color: #fbbf24;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+}
+
+.review-quote {
+  flex: 1;
+  margin: 0 0 20px;
+  color: #dbe4f0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.review-author {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 9px;
+  margin: 0;
+  padding-top: 14px;
+  color: #fbbf24;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  font-size: 0.95rem;
+}
+
+.review-author span {
+  color: #cbd5e1;
+}
+
+.proof-showcase-list {
+  display: grid;
+  gap: 24px;
+  margin: 30px auto 45px;
+}
+
+.proof-showcase {
+  --proof-accent: #4ade80;
+  --proof-accent-soft: rgba(34, 197, 94, 0.13);
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: stretch;
+  overflow: hidden;
+  color: #f8fafc;
+  background: linear-gradient(135deg, #0f172a, #111827 68%, #172033);
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.proof-showcase--violet {
+  --proof-accent: #c084fc;
+  --proof-accent-soft: rgba(168, 85, 247, 0.15);
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+}
+
+.proof-showcase-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+}
+
+.proof-showcase-data {
+  align-self: center;
+  min-width: 0;
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.proof-dashboard-label {
+  margin-bottom: 10px;
+  color: var(--proof-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.proof-total {
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.proof-total-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 7px;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+}
+
+.proof-growth {
+  padding: 6px 9px;
+  color: var(--proof-accent);
+  background: var(--proof-accent-soft);
+  border-radius: 7px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.proof-growth small {
+  color: #cbd5e1;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.proof-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.24);
+}
+
+.proof-metrics div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.proof-metrics span,
+.proof-metrics small {
+  color: #aebbd0;
+  font-size: 0.72rem;
+}
+
+.proof-metrics strong {
+  color: #f8fafc;
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.7vw, 1.12rem);
+  overflow-wrap: anywhere;
+}
+
+.proof-metrics small {
+  color: var(--proof-accent);
+}
+
+.proof-footnote {
+  display: block;
+  margin-top: 18px;
+  color: #aebbd0;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .review-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .proof-showcase,
+  .proof-showcase--violet {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .proof-showcase-art {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
+  .proof-showcase--violet .proof-showcase-art {
+    order: -1;
+  }
 }
 
 /* Signature Component: KDP Print Previewer Simulator */
@@ -2107,15 +2339,14 @@ body.has-sticky-bar {
 
 /* ==========================================================================
    Front landing page — premium vibrant editorial backgrounds
-   Controlled palette + supplied textures; scoped so OTO pages remain clean.
+   Scoped so OTO pages remain clean.
    ========================================================================== */
 .front-page>.sec-editorial {
   isolation: isolate;
   background-color: #f7f9ff;
   background-image:
     radial-gradient(circle at 8% 12%, rgba(99, 102, 241, 0.2), transparent 26%),
-    radial-gradient(circle at 92% 86%, rgba(14, 165, 233, 0.16), transparent 30%),
-    url('assets/bg_tech_light.png');
+    radial-gradient(circle at 92% 86%, rgba(14, 165, 233, 0.16), transparent 30%);
   background-position: center;
   background-size: cover;
   border-bottom-color: rgba(148, 163, 184, 0.28);
@@ -2143,32 +2374,28 @@ body.has-sticky-bar {
   background-color: #eef5ff;
   background-image:
     radial-gradient(circle at 10% 18%, rgba(59, 130, 246, 0.32), transparent 27%),
-    radial-gradient(circle at 90% 82%, rgba(129, 140, 248, 0.26), transparent 31%),
-    url('assets/bg_tech_light.png');
+    radial-gradient(circle at 90% 82%, rgba(129, 140, 248, 0.26), transparent 31%);
 }
 
 .front-page>.sec-editorial:nth-of-type(4n + 2) {
   background-color: #ebfff7;
   background-image:
     radial-gradient(circle at 10% 82%, rgba(16, 185, 129, 0.28), transparent 30%),
-    radial-gradient(circle at 92% 12%, rgba(45, 212, 191, 0.22), transparent 28%),
-    url('assets/bg_emerald_pattern.png');
+    radial-gradient(circle at 92% 12%, rgba(45, 212, 191, 0.22), transparent 28%);
 }
 
 .front-page>.sec-editorial:nth-of-type(4n + 3) {
   background-color: #fff8e8;
   background-image:
     radial-gradient(circle at 9% 15%, rgba(251, 146, 60, 0.3), transparent 28%),
-    radial-gradient(circle at 91% 82%, rgba(250, 204, 21, 0.25), transparent 31%),
-    url('assets/bg_gold_pattern.png');
+    radial-gradient(circle at 91% 82%, rgba(250, 204, 21, 0.25), transparent 31%);
 }
 
 .front-page>.sec-editorial:nth-of-type(4n) {
   background-color: #f7f1ff;
   background-image:
     radial-gradient(circle at 12% 78%, rgba(168, 85, 247, 0.22), transparent 29%),
-    radial-gradient(circle at 90% 18%, rgba(236, 72, 153, 0.18), transparent 26%),
-    url('assets/bg_tech_light.png');
+    radial-gradient(circle at 90% 18%, rgba(236, 72, 153, 0.18), transparent 26%);
 }
 
 .front-page>#hero {
@@ -2176,8 +2403,7 @@ body.has-sticky-bar {
   background-image:
     radial-gradient(circle at 8% 18%, rgba(249, 115, 22, 0.38), transparent 27%),
     radial-gradient(circle at 91% 20%, rgba(59, 130, 246, 0.26), transparent 26%),
-    radial-gradient(circle at 52% 100%, rgba(250, 204, 21, 0.2), transparent 32%),
-    url('assets/bg_gold_pattern.png');
+    radial-gradient(circle at 52% 100%, rgba(250, 204, 21, 0.2), transparent 32%);
 }
 
 .front-page>.sec-editorial .card-panel,
@@ -2211,7 +2437,7 @@ body.has-sticky-bar {
   background-image:
     radial-gradient(circle at 8% 16%, rgba(59, 130, 246, 0.26), transparent 27%),
     radial-gradient(circle at 92% 84%, rgba(168, 85, 247, 0.2), transparent 28%),
-    url('assets/bg_tech_light.png');
+    url('assets/backgrounds/faq.jpg');
 }
 
 .front-page .checkout-section {
@@ -2219,7 +2445,7 @@ body.has-sticky-bar {
   background-image:
     radial-gradient(circle at 8% 18%, rgba(249, 115, 22, 0.3), transparent 28%),
     radial-gradient(circle at 92% 76%, rgba(250, 204, 21, 0.28), transparent 30%),
-    url('assets/bg_gold_pattern.png') !important;
+    url('assets/backgrounds/checkout.jpg') !important;
 }
 
 @media (max-width: 768px) {
@@ -3868,6 +4094,173 @@ img[src*="assets/bundle.png"] {
   }
 }
 
+/* Hero type scale: keep the offer prominent without compressed display lettering. */
+.front-page .top-ticker {
+  padding: 8px 16px;
+}
+
+.front-page .top-ticker-content {
+  font-size: clamp(0.82rem, 1.15vw, 1.12rem);
+  line-height: 1.35;
+  gap: 12px;
+}
+
+.front-page #hero {
+  padding-top: 0;
+}
+
+.front-page #hero > .container {
+  padding-top: 58px;
+}
+
+.front-page #hero .site-header {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+/* OTO headers share their first section's background, like the main offer. */
+.oto-page #hero {
+  padding-top: 0;
+}
+
+.oto-page #hero > .container {
+  padding-top: 58px;
+}
+
+.oto-page #hero .site-header {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.front-page #hero .eyebrow-badge {
+  font-size: 0.9rem !important;
+  line-height: 1.4;
+  padding: 9px 20px;
+  margin-bottom: 0;
+}
+
+.front-page #hero .hero-title-reference {
+  max-width: 1150px !important;
+  margin: 22px auto 24px !important;
+  font-family: 'Manrope', var(--font-body) !important;
+  font-size: clamp(2.25rem, 3.1vw, 3.3rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.045em !important;
+  text-wrap: balance;
+}
+
+.front-page #hero .hero-title-reference .hero-highlight {
+  padding: 0.04em 0.2em !important;
+  line-height: 1.22 !important;
+  vertical-align: baseline !important;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.front-page #hero .dark-pill-bar {
+  max-width: calc(100% - 24px);
+  margin: 0 auto 18px;
+  padding: 13px 26px;
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 1.5vw, 1.55rem);
+  line-height: 1.3;
+  gap: 10px;
+}
+
+.front-page #hero .pill-rotator-group {
+  gap: 8px;
+}
+
+.front-page #hero .brush-stroke-banner {
+  max-width: calc(100% - 24px);
+  padding: 10px 26px;
+  font-family: 'Manrope', var(--font-body);
+  font-size: clamp(1rem, 1.25vw, 1.3rem);
+  font-weight: 800;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.front-page #hero .hero-no-skills-bar {
+  margin-bottom: 16px;
+  font-size: clamp(0.95rem, 1.1vw, 1.12rem);
+  line-height: 1.5;
+}
+
+.front-page #hero .sec-desc {
+  max-width: 800px !important;
+  margin-bottom: 30px !important;
+  font-size: clamp(1rem, 1.1vw, 1.15rem) !important;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .front-page #hero {
+    padding-top: 0;
+  }
+
+  .front-page #hero > .container {
+    padding-top: 44px;
+  }
+
+  .oto-page #hero > .container {
+    padding-top: 44px;
+  }
+
+  .front-page #hero .hero-title-reference {
+    max-width: 650px !important;
+    margin: 20px auto 22px !important;
+    font-size: clamp(1.9rem, 5vw, 2.3rem) !important;
+    line-height: 1.24 !important;
+  }
+
+  .front-page #hero .hero-title-reference .hero-highlight {
+    display: inline !important;
+    padding: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    color: #d95b0b !important;
+    white-space: normal !important;
+  }
+
+  .front-page #hero .hero-title-reference .hero-highlight-blue {
+    color: #1450c9 !important;
+  }
+
+  .front-page #hero .dark-pill-bar {
+    flex-wrap: wrap;
+    padding: 12px 20px;
+  }
+
+  .front-page #hero .brush-stroke-banner {
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .front-page #hero .hero-title-reference {
+    font-size: clamp(1.8rem, 7vw, 2.05rem) !important;
+  }
+
+  .front-page #hero .dark-pill-bar {
+    font-size: 0.98rem;
+    gap: 5px;
+  }
+
+  .front-page #hero .pill-rotator-group {
+    gap: 5px;
+  }
+
+  .front-page #hero .hero-no-skills-bar {
+    font-size: 0.94rem;
+  }
+}
+
 /* ==========================================================================
    KDP Profit Machine JV PAGE STYLES
    ========================================================================== */
@@ -5376,5 +5769,353 @@ img[src*="assets/bundle.png"] {
   }
 .guarantee-box-icon {
     margin-top: 2px;
+  }
+}
+
+/* Compact offer chapter. The index template renders this at each CTA break. */
+.offer-repeat {
+  padding: 38px 0;
+  color: #f8fafc;
+  background: linear-gradient(110deg, #0b1420 0%, #102437 58%, #132e38 100%);
+}
+
+.offer-repeat__shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.offer-repeat__card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(270px, 330px);
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 3.8vw, 44px);
+  background:
+    radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.13), transparent 29%),
+    linear-gradient(125deg, #111927 0%, #172334 58%, #0d1722 100%);
+  border: 1px solid rgba(245, 185, 70, 0.45);
+  border-left: 4px solid #f3b83f;
+  border-radius: 18px;
+  box-shadow: 0 20px 48px rgba(3, 8, 16, 0.3);
+}
+
+.offer-repeat__copy {
+  min-width: 0;
+}
+
+.offer-repeat__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 13px;
+  color: #f3bd59;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  line-height: 1.3;
+}
+
+.offer-repeat__eyebrow span {
+  font-size: 0.77rem;
+}
+
+.offer-repeat__title {
+  max-width: 710px;
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: clamp(2.45rem, 4.2vw, 3.9rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+
+.offer-repeat__title span {
+  color: #f8c35d;
+}
+
+.offer-repeat__sub {
+  margin: 13px 0 22px;
+  color: #c3cfdd;
+  font-size: 1.04rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.offer-repeat__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: min(100%, 430px);
+  min-height: 58px;
+  padding: 8px 9px 8px 20px;
+  color: #151c27;
+  background: linear-gradient(110deg, #f9cf77 0%, #f4b93f 58%, #efa72b 100%);
+  border: 1px solid #ffe4a8;
+  border-radius: 11px;
+  box-shadow: 0 10px 25px rgba(236, 164, 43, 0.22);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-repeat__button:hover {
+  color: #151c27;
+  background: linear-gradient(110deg, #ffe19c, #f7c75d);
+  box-shadow: 0 13px 28px rgba(236, 164, 43, 0.32);
+  transform: translateY(-2px);
+}
+
+.offer-repeat__button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.offer-repeat__button-arrow {
+  display: grid;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: #f9cf77;
+  background: #17202e;
+  border-radius: 7px;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.offer-repeat__assurance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 22px;
+  margin-top: 22px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(203, 213, 225, 0.18);
+}
+
+.offer-repeat__guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.offer-repeat__check {
+  display: grid;
+  flex: 0 0 33px;
+  width: 33px;
+  height: 33px;
+  place-items: center;
+  color: #8ee6ae;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(134, 239, 172, 0.36);
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.offer-repeat__guarantee strong,
+.offer-repeat__guarantee small {
+  display: block;
+}
+
+.offer-repeat__guarantee strong {
+  color: #c4f6d4;
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.offer-repeat__guarantee small {
+  margin-top: 2px;
+  color: #aebed0;
+  font-size: 0.69rem;
+}
+
+.offer-repeat__payments {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.offer-repeat__payments img {
+  width: auto;
+  max-width: 48px;
+  height: 24px;
+  padding: 2px 4px;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.offer-repeat__details {
+  margin: 12px 0 0;
+  color: #aebed0;
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.offer-repeat__details span {
+  margin: 0 4px;
+  color: #f3bd59;
+}
+
+.offer-repeat__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding-left: 24px;
+  border-left: 1px solid rgba(203, 213, 225, 0.14);
+}
+
+.offer-repeat__mockup {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 295px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.45));
+}
+
+.offer-repeat__timer-card {
+  width: min(100%, 285px);
+  margin-top: 2px;
+  padding: 8px 10px 10px;
+  background: rgba(7, 14, 24, 0.75);
+  border: 1px solid rgba(245, 185, 70, 0.28);
+  border-radius: 10px;
+}
+
+.offer-repeat__timer-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #f3bd59;
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer-repeat .cta-countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+  padding: 0;
+  background: transparent;
+}
+
+.offer-repeat__time {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+  padding: 4px 2px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+}
+
+.offer-repeat__time strong {
+  color: #ffe1a0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.offer-repeat__time small {
+  color: #aebed0;
+  font-size: 0.55rem;
+  line-height: 1;
+}
+
+@media (max-width: 850px) {
+  .offer-repeat__card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .offer-repeat__visual {
+    flex-direction: row;
+    gap: 24px;
+    padding: 15px 0 0;
+    border-top: 1px solid rgba(203, 213, 225, 0.14);
+    border-left: 0;
+  }
+
+  .offer-repeat__mockup {
+    height: 180px;
+  }
+
+  .offer-repeat__timer-card {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .offer-repeat {
+    padding: 22px 0;
+  }
+
+  .offer-repeat__shell {
+    padding: 0 14px;
+  }
+
+  .offer-repeat__card {
+    gap: 18px;
+    padding: 23px 20px;
+    border-radius: 14px;
+  }
+
+  .offer-repeat__title {
+    font-size: clamp(2.15rem, 9vw, 2.7rem);
+  }
+
+  .offer-repeat__sub {
+    font-size: 0.95rem;
+  }
+
+  .offer-repeat__button {
+    width: 100%;
+    min-height: 56px;
+    font-size: 0.92rem;
+  }
+
+  .offer-repeat__visual {
+    gap: 10px;
+  }
+
+  .offer-repeat__mockup {
+    height: 145px;
+  }
+
+  .offer-repeat__timer-card {
+    width: min(100%, 190px);
+    padding: 7px;
+  }
+
+  .offer-repeat__time {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offer-repeat__button {
+    transition: none;
+  }
+
+  .offer-repeat__button:hover {
+    transform: none;
   }
 }
