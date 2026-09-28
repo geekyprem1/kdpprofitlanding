@@ -3726,97 +3726,284 @@ img[src*="assets/bundle.png"] {
 }
 
 /* ==========================================================================
-   SEE YOU ON THE INSIDE - TEAM KALKI AI SECTION
+   TWO CHOICES SECTION
    ========================================================================== */
-.see-you-inside-section {
-  padding: 60px 20px 40px;
+body.front-page > .sec-editorial.choice-section {
+  padding: 82px 0 92px;
+  background: #fbf7ed;
+  background-image: radial-gradient(circle at 50% 0, rgba(255, 224, 161, 0.22), transparent 55%);
+  border-top: 1px solid #eee4d3;
+  border-bottom: 1px solid #eee4d3;
+}
+
+.choice-section__inner {
+  max-width: 1060px;
+}
+
+.choice-section__intro {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.choice-section__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: 1px solid #dbb872;
+  border-radius: 100px;
+  color: #8b520b;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.choice-section__intro h2 {
+  margin: 0;
+  color: #071320;
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.choice-section__intro h2 span {
+  color: #11a671;
+}
+
+.choice-section__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.choice-card {
+  min-height: 330px;
+  padding: 30px 32px 34px;
+  border-radius: 22px;
+  box-shadow: 0 18px 36px rgba(20, 32, 42, 0.09);
+  text-align: left;
+}
+
+.choice-card--stuck {
+  border: 1px solid #ead7d0;
+  background: #fffdf9;
+}
+
+.choice-card--ready {
+  border: 1px solid #276a57;
+  background: #102d2c;
+  box-shadow: 0 20px 42px rgba(10, 65, 47, 0.18);
+}
+
+.choice-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 112px;
+}
+
+.choice-card__number {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.choice-card--stuck .choice-card__number {
+  background: #f9e9e4;
+  color: #9b4a3b;
+}
+
+.choice-card--ready .choice-card__number {
+  background: #205045;
+  color: #b8f5d6;
+}
+
+.choice-card__art {
+  width: 112px;
+  height: 112px;
+  flex: none;
+  margin: -10px -8px 0 0;
+}
+
+.choice-card h3 {
+  margin: 2px 0 14px;
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.choice-card--stuck h3 {
+  color: #8e3d32;
+}
+
+.choice-card--ready h3 {
+  color: #e2fff0;
+}
+
+.choice-card p {
+  max-width: 39ch;
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.choice-card--stuck p {
+  color: #364352;
+}
+
+.choice-card--ready p {
+  color: #d1e9dd;
+}
+
+.choice-section__or {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border: 5px solid #fbf7ed;
+  border-radius: 50%;
+  background: #10242b;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 740px) {
+  body.front-page > .sec-editorial.choice-section {
+    padding: 58px 0 64px;
+  }
+
+  .choice-section__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .choice-section__or {
+    top: 50%;
+  }
+
+  .choice-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .choice-card {
+    padding: 22px 23px 28px;
+  }
+
+  .choice-card__top {
+    min-height: 96px;
+  }
+
+  .choice-card__art {
+    width: 96px;
+    height: 96px;
+  }
+
+  .choice-card p {
+    font-size: 0.98rem;
+  }
+}
+
+/* ==========================================================================
+   KDP PROFIT SYSTEM FOUNDERS SECTION
+   ========================================================================== */
+.kdp-founders-section {
+  padding: 64px 20px 72px;
   background: #05070d;
   text-align: center;
-  position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.see-you-inside-title {
+.kdp-founders-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4.5vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 30px;
+  color: #fff;
+  margin-bottom: 36px;
   letter-spacing: -0.02em;
 }
 
-.see-you-inside-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 750px;
+.kdp-founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.see-you-inside-circle-wrap {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  padding: 6px;
-  background: linear-gradient(135deg, #a855f7, #3b82f6, #ec4899);
-  box-shadow: 0 0 35px rgba(168, 85, 247, 0.55), 0 0 15px rgba(59, 130, 246, 0.4);
-  margin-bottom: 18px;
-  animation: pulseNeon 3s infinite alternate;
+.kdp-founder-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: #0d1423;
+  text-align: left;
 }
 
-@keyframes pulseNeon {
-  0% {
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.5), 0 0 12px rgba(59, 130, 246, 0.3);
-  }
-
-  100% {
-    box-shadow: 0 0 45px rgba(168, 85, 247, 0.8), 0 0 25px rgba(236, 72, 153, 0.6);
-  }
-}
-
-.see-you-inside-img {
+.kdp-founder-card img {
+  display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 50%;
-  background: #090d16;
+  object-position: center 25%;
 }
 
-.see-you-inside-name-badge {
-  display: inline-block;
-  background: linear-gradient(180deg, #fb923c 0%, #ea580c 100%);
-  color: #ffffff;
+.kdp-founder-content {
+  padding: 24px 26px 28px;
+}
+
+.kdp-founder-name {
+  margin: 0 0 12px;
+  color: #fff;
   font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 900;
-  padding: 10px 36px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.45);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.see-you-inside-promise {
-  font-size: 1.12rem;
-  line-height: 1.8;
+.kdp-founder-content h4 {
+  margin: 0 0 12px;
+  color: #fbbf24;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.kdp-founder-content p {
+  margin: 0 0 20px;
   color: #cbd5e1;
-  max-width: 720px;
-  margin: 0 auto 16px;
-  background: rgba(15, 23, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 24px 30px;
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
-.see-you-inside-ps {
-  font-size: 0.88rem;
+.kdp-founder-content a {
+  color: #fb923c;
   font-weight: 700;
-  color: var(--amber-dark);
-  margin-top: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .kdp-founders-grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
 }
 
 /* ==========================================================================
@@ -5400,42 +5587,42 @@ img[src*="assets/bundle.png"] {
 }
 
 /* ==========================================================================
-   TEAM KALKI AI AFFILIATE SUPPORT SECTION STYLES
+   AFFILIATE PARTNER SUPPORT SECTION STYLES
    ========================================================================== */
-.jv-sec-kalki {
-  background: url('assets/jv_kalki_bg.jpg') center center / cover no-repeat;
+.jv-sec-partner {
+  background: #101d25;
   padding: 95px 0;
   border-top: 1px solid rgba(139, 92, 246, 0.25);
   border-bottom: 1px solid rgba(139, 92, 246, 0.25);
   position: relative;
 }
 
-.jv-sec-kalki .sec-title,
-.jv-sec-kalki .dark-mode-title {
+.jv-sec-partner .sec-title,
+.jv-sec-partner .dark-mode-title {
   color: #0b1329 !important;
 }
 
-.jv-sec-kalki .sec-desc,
-.jv-sec-kalki .dark-mode-desc {
+.jv-sec-partner .sec-desc,
+.jv-sec-partner .dark-mode-desc {
   color: #334155 !important;
   font-weight: 600;
 }
 
-.kalki-eyebrow {
+.partner-eyebrow {
   background: rgba(139, 92, 246, 0.12);
   border: 1px solid rgba(139, 92, 246, 0.35);
   color: #6d28d9;
   font-weight: 700;
 }
 
-.kalki-support-grid {
+.partner-support-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
   margin-top: 50px;
 }
 
-.kalki-card {
+.partner-card {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(139, 92, 246, 0.25);
   padding: 32px 26px;
@@ -5445,31 +5632,31 @@ img[src*="assets/bundle.png"] {
   box-shadow: 0 12px 30px rgba(139, 92, 246, 0.12);
 }
 
-.kalki-card:hover {
+.partner-card:hover {
   transform: translateY(-6px);
   border-color: rgba(139, 92, 246, 0.6);
   box-shadow: 0 16px 36px rgba(139, 92, 246, 0.22);
 }
 
-.kalki-icon {
+.partner-icon {
   font-size: 2.2rem;
   margin-bottom: 14px;
 }
 
-.kalki-card h3 {
+.partner-card h3 {
   font-size: 1.2rem;
   color: #000000 !important;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.kalki-card p {
+.partner-card p {
   color: #475569;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
-.kalki-guarantee-box {
+.partner-guarantee-box {
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(139, 92, 246, 0.35);
   border-radius: var(--radius-md);
@@ -5481,7 +5668,7 @@ img[src*="assets/bundle.png"] {
   backdrop-filter: blur(12px);
 }
 
-.kalki-guarantee-badge {
+.partner-guarantee-badge {
   font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 800;
@@ -5495,13 +5682,13 @@ img[src*="assets/bundle.png"] {
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-.kalki-guarantee-text {
+.partner-guarantee-text {
   font-size: 1.12rem;
   color: #1e293b;
   line-height: 1.7;
 }
 
-.kalki-guarantee-text strong {
+.partner-guarantee-text strong {
   color: #6d28d9;
 }
 
@@ -5593,25 +5780,6 @@ img[src*="assets/bundle.png"] {
   .jv-pill-nav-container {
     padding: 8px 16px;
   }
-}
-
-.kalki-logo-header-wrap {
-  margin: 22px auto 25px auto;
-  display: flex;
-  justify-content: center;
-}
-
-.kalki-header-logo {
-  height: 240px;
-  width: auto;
-  max-width: 100%;
-  filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.35));
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.kalki-header-logo:hover {
-  transform: scale(1.04);
-  filter: drop-shadow(0 0 45px rgba(56, 189, 248, 0.55));
 }
 
 /* ==========================================================================
@@ -6413,4 +6581,19 @@ img[src*="assets/bundle.png"] {
   .offer-repeat__button:hover {
     transform: none;
   }
+}
+
+/* One typeface throughout the main sales page. */
+body.front-page {
+  --font-display: 'DM Sans', Arial, sans-serif;
+  --font-body: 'DM Sans', Arial, sans-serif;
+  --font-mono: 'DM Sans', Arial, sans-serif;
+}
+
+body.front-page,
+body.front-page *,
+body.front-page *::before,
+body.front-page *::after,
+body.front-page #hero .hero-title-reference {
+  font-family: 'DM Sans', Arial, sans-serif !important;
 }
