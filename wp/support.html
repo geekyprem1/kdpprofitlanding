@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support & Account Access - KDP Profit Machine</title>
+  <meta name="description" content="Access your KDP Profit Machine account credentials and contact customer support.">
+  <link rel="icon" type="image/png" href="assets/kdp-profit-machine-logo.png">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <style>
+    body.support-page {
+      background-color: #0b0f19;
+      color: #cbd5e1;
+      min-height: 100vh;
+      font-family: var(--font-body), sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .support-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .support-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .support-header-logo img {
+      height: 65px;
+      width: auto;
+      display: block;
+    }
+
+    .btn-nav-help {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #0b0f19;
+      background: #f59e0b;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-nav-help:hover {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .support-container {
+      max-width: 1140px;
+      margin: 48px auto 80px;
+      padding: 0 24px;
+    }
+
+    /* TOP GRID LAYOUT */
+    .support-top-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 900px) {
+      .support-top-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    /* LEFT HERO COPY */
+    .eyebrow-badge-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: #fbbf24;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-heading {
+      font-family: var(--font-display), sans-serif;
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin: 0 0 18px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-heading span {
+      color: #f59e0b;
+    }
+
+    .hero-subtext {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-bottom: 28px;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    .callout-box-dark {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-left: 4px solid #f59e0b;
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      color: #e2e8f0;
+      font-size: 0.98rem;
+      font-weight: 500;
+    }
+
+    .callout-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    /* RIGHT CREDENTIALS CARD */
+    .cred-card-dark {
+      background: #111827;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1f2937;
+      position: relative;
+    }
+
+    .cred-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 20px;
+    }
+
+    .cred-eyebrow {
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #f59e0b;
+      margin-bottom: 6px;
+    }
+
+    .cred-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0;
+      font-family: var(--font-display), sans-serif;
+    }
+
+    .btn-copy-all-gold {
+      background: #f59e0b;
+      color: #0b0f19;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 900;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+    }
+
+    .btn-copy-all-gold:hover {
+      background: #d97706;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .cred-row-dark {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: #0b0f19;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      border: 1px solid #1f2937;
+    }
+
+    .cred-label-dark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #e2e8f0;
+    }
+
+    .cred-icon-wrap-dark {
+      width: 38px;
+      height: 38px;
+      background: rgba(245, 158, 11, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f59e0b;
+      font-size: 1.1rem;
+    }
+
+    .cred-value-dark {
+      font-family: var(--font-mono), monospace;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fbbf24;
+      background: #111827;
+      border: 1px solid #374151;
+      padding: 6px 14px;
+      border-radius: 8px;
+      word-break: break-all;
+    }
+
+    .cred-url-link-gold {
+      color: #f59e0b;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .btn-copy-sm-dark {
+      background: #374151;
+      color: #ffffff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-copy-sm-dark:hover {
+      background: #f59e0b;
+      color: #0b0f19;
+    }
+
+    /* BOTTOM TWO CARDS GRID */
+    .support-bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+
+    @media (max-width: 900px) {
+      .support-bottom-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    .info-card-dark {
+      background: #111827;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid #1f2937;
+    }
+
+    .info-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .info-card-icon-gold {
+      width: 50px;
+      height: 50px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: #f59e0b;
+    }
+
+    .info-card-title-dark {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0;
+      font-family: var(--font-display), sans-serif;
+    }
+
+    .info-card-desc-dark {
+      color: #94a3b8;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+
+    .support-policy-box-dark {
+      background: #0b0f19;
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+
+    .support-policy-box-dark strong {
+      color: #ffffff;
+    }
+
+    .action-btn-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-support-gold-action {
+      flex: 1;
+      min-width: 190px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #f59e0b;
+      color: #0b0f19;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 0.95rem;
+      padding: 14px 20px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+    }
+
+    .btn-support-gold-action:hover {
+      background: #d97706;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .btn-support-dark-sec {
+      background: #1f2937;
+      color: #ffffff;
+      border: 1px solid #374151;
+      box-shadow: none;
+    }
+
+    .btn-support-dark-sec:hover {
+      background: #374151;
+      color: #fbbf24;
+    }
+
+    .feature-list-item-dark {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #0b0f19;
+      border: 1px solid #1f2937;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: #e2e8f0;
+      font-size: 1rem;
+    }
+
+    .legal-footer {
+      background: #070a11;
+      border-top: 1px solid #1f2937;
+      padding: 40px 20px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.88rem;
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast-dark {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #f59e0b;
+      color: #0b0f19;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 0.95rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      pointer-events: none;
+      z-index: 1000;
+      box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    }
+
+    .toast-dark.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="support-page">
+
+  <!-- HEADER -->
+  <header class="support-header">
+    <div class="support-header-inner">
+      <a href="index.html" class="support-header-logo">
+        <img src="assets/kdp-profit-machine-logo.png?v=1" alt="KDP Profit Machine Logo"
+          onerror="this.onerror=null; this.src='assets/kdp-profit-machine-logo.png';">
+      </a>
+      <a href="https://teamkalki.tawk.help/" target="_blank" rel="noopener noreferrer" class="btn-nav-help">
+        💬 Live Help Center
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="support-container">
+
+    <!-- TOP GRID -->
+    <div class="support-top-grid">
+
+      <!-- HERO LEFT -->
+      <div>
+        <div class="eyebrow-badge-dark">
+          ⚡ Welcome to KDP Profit Machine
+        </div>
+
+        <h1 class="hero-heading">
+          Welcome To<br><span>KDP Profit Machine</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Your account is ready. Use the credentials below to sign in and start creating AI-generated books that sell on
+          Amazon KDP.
+        </p>
+
+        <div class="callout-box-dark">
+          <span class="callout-icon">🚀</span>
+          <div>
+            Discover profitable niches, create better books, and grow your Amazon royalty empire from one command
+            center.
+          </div>
+        </div>
+      </div>
+
+      <!-- CREDENTIALS RIGHT -->
+      <div class="cred-card-dark">
+        <div class="cred-card-header">
+          <div>
+            <div class="cred-eyebrow">Thank you for choosing KDP Profit Machine</div>
+            <h2 class="cred-title">Your Login Credentials</h2>
+          </div>
+          <button class="btn-copy-all-gold" onclick="copyAllCredentials()">
+            📋 Copy All
+          </button>
+        </div>
+
+        <div class="cred-row-dark">
+          <div class="cred-label-dark">
+            <div class="cred-icon-wrap-dark">🌐</div>
+            <span>Login URL:</span>
+          </div>
+          <div>
+            <a href="https://login.kdpprofit.online/login" target="_blank" rel="noopener noreferrer" class="cred-url-link-gold"
+              id="urlVal">https://login.kdpprofit.online/login</a>
+          </div>
+        </div>
+
+        <div class="cred-row-dark">
+          <div class="cred-label-dark">
+            <div class="cred-icon-wrap-dark">✉️</div>
+            <span>Email:</span>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <span class="cred-value-dark" id="emailVal">Your Purchase Email Address</span>
+          </div>
+        </div>
+
+        <div class="cred-row-dark">
+          <div class="cred-label-dark">
+            <div class="cred-icon-wrap-dark">🔒</div>
+            <span>Password:</span>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <span class="cred-value-dark" id="passVal">kppnew48858</span>
+            <button class="btn-copy-sm-dark" onclick="copyText('passVal', 'Password copied!')">📋 Copy</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM GRID -->
+    <div class="support-bottom-grid">
+
+      <!-- NEED HELP CARD -->
+      <div class="info-card-dark">
+        <div class="info-card-header">
+          <div class="info-card-icon-gold">🎧</div>
+          <div>
+            <h3 class="info-card-title-dark">Need Help?</h3>
+          </div>
+        </div>
+        <p class="info-card-desc-dark">
+          Our support team is here to help you build your book empire.
+        </p>
+
+        <div class="support-policy-box-dark">
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="font-size:1.3rem; color:#f59e0b;">ℹ️</span>
+            <div>
+              <strong>We're here to help you succeed with KDP Profit Machine.</strong><br>
+              Our support team responds within <strong>24-48 hours</strong> (excluding Sundays). We operate on a
+              first-come, first-served basis.<br><br>
+              Your success is our priority. Thank you for your patience and understanding.
+            </div>
+          </div>
+        </div>
+
+        <div class="action-btn-row">
+          <a href="https://teamkalki.tawk.help/" target="_blank" rel="noopener noreferrer"
+            class="btn-support-gold-action">
+            💬 Open Help Center Desk
+          </a>
+          <a href="mailto:hello@kdpprofit.online" class="btn-support-gold-action btn-support-dark-sec">
+            ✉️ Email Support
+          </a>
+        </div>
+      </div>
+
+      <!-- BOOK EMPIRE STARTS HERE CARD -->
+      <div class="info-card-dark">
+        <div class="info-card-header">
+          <div class="info-card-icon-gold">📖</div>
+          <div>
+            <h3 class="info-card-title-dark">🚀 Your Book Empire Starts Here</h3>
+          </div>
+        </div>
+        <p class="info-card-desc-dark">
+          Welcome to KDP Profit Machine. Discover profitable niches, create better books, and grow your Amazon royalty empire
+          from one command center.
+        </p>
+
+        <div>
+          <div class="feature-list-item-dark">
+            <span style="color:#f59e0b;">⚡</span>
+            <span>AI-Powered Book Generation</span>
+          </div>
+          <div class="feature-list-item-dark">
+            <span style="color:#059669;">📈</span>
+            <span>Niche &amp; Opportunity Finder</span>
+          </div>
+          <div class="feature-list-item-dark">
+            <span style="color:#3b82f6;">🎨</span>
+            <span>One-Click KDP Print &amp; Cover Formatter</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="legal-footer">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p style="margin-bottom: 12px; color: #94a3b8;">
+        <em>Not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. "Amazon," "Kindle," and "KDP" are
+          trademarks of Amazon.com, Inc. or its affiliates.</em>
+      </p>
+      <p>&copy; 2026 KDP Profit Machine. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast-dark">Copied to clipboard!</div>
+
+  <script>
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function copyText(elementId, successMsg) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      const text = el.textContent || el.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg || 'Copied!');
+      }).catch(err => {
+        showToast('Copied to clipboard!');
+      });
+    }
+
+    function copyAllCredentials() {
+      const url = document.getElementById('urlVal').textContent;
+      const email = document.getElementById('emailVal').textContent;
+      const pass = document.getElementById('passVal').textContent;
+      const fullText = `KDP Profit Machine Account Credentials:\nURL: ${url}\nEmail: ${email}\nPassword: ${pass}`;
+
+      navigator.clipboard.writeText(fullText).then(() => {
+        showToast('All credentials copied!');
+      }).catch(err => {
+        showToast('Credentials copied!');
+      });
+    }
+  </script>
+
+</body>
+
+</html>
